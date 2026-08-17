@@ -59,14 +59,14 @@ r = r_raw * 1.0
 g = g_raw * 1.2   
 b = b_raw * 1.45
 ```
-# Driver Decoupling & Deployment Optimization
+### Driver Decoupling & Deployment Optimization
 *Initial Plan*: Rely on an external multi-file tcs34725.py module loaded alongside main.py.
 
 *The Problem*: In pure embedded environments and lightweight IDEs, multi-file imports often create path resolution overhead and upload fragmentation.
 
 *Solution*: Refactored the core I2C register interface directly into a compact class within main.py, reducing upload complexity and eliminating import errors.
 
-# Ambiguity in Neutral / Low-Reflectance States
+### Ambiguity in Neutral / Low-Reflectance States
 *The Problem*: White and matte black surfaces reflect light uniformly across all channels at low-to-medium amplitudes, causing erratic bouncing between chromatic flags.
 
 *Solution*: Implemented a dedicated lower-bound boundary condition (0 < raw < 60 across all channels simultaneously) routed directly to a designated neutral white LED indicator.
