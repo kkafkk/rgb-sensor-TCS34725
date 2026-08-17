@@ -36,7 +36,7 @@ The algorithm continuously reads the RGB channels and the overall illuminance (C
 ```
 ## 📸 Showcase
 
-https://github.com/user-attachments/assets/1890187e-0470-4c40-9bdd-3f6c83fe8692
+https://github.com/user-attachments/assets/14d08c5f-961d-4658-bcd3-8cda4e6854aa
 
 <img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/91f8ff44-b2d2-4c2a-a60c-2fc2c99d7290" />
 
